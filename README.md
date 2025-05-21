@@ -1,13 +1,5 @@
 # 📘 TAGNGRAM PROJECT - IDEA FACTORY
 
-Tangram 블록 기반 오브젝트를 등록하고, 시각화하며, AI 기능과 연결 가능한 인터랙티브 웹 애플리케이션입니다.
-
-<p align="center">
-  <img src="public/images/preview.png" width="600"/>
-</p>
-
----
-
 ## 🚀 실행 방법
 
 ### 1. 설치
@@ -31,14 +23,13 @@ npm run dev
 ```
 tangram_project/
 ├── public/
-│   └── images/                  # Tangram 및 생성 이미지 리소스
+│   └── images/                 # Tangram 및 생성 이미지 리소스 (API 연동 후 구조 변경)
 ├── src/
-│   ├── assets/                  # (필요 시 사용) 기타 이미지, 아이콘 등
+│   ├── assets/                 
 │   ├── components/             # 재사용 가능한 UI 컴포넌트
-│   │   ├── ObjectCard.tsx
 │   │   └── SelectedObjectDetail.tsx
-│   ├── data/                   # 샘플 오브젝트 데이터
-│   │   └── sampleObjects.ts
+│   ├── data/                   
+│   │   └── sampleObjects.ts    # 예시 오브젝트 데이터
 │   ├── pages/
 │   │   └── IdeaFactory.tsx     # 메인 페이지 컴포넌트
 │   ├── types/
@@ -90,23 +81,9 @@ export interface TangramObject {
 
 ---
 
-### 🖼️ `ObjectCard.tsx`
-
-* 오브젝트 전체 정보를 카드 형태로 보여주는 UI (현재는 상세 뷰에서는 사용하지 않음)
-
----
-
-## 🎨 스타일
-
-* [Tailwind CSS](https://tailwindcss.com/) 기반의 유틸리티 클래스 사용
-* 반응형 대응 (`grid-cols-3 md:grid-cols-4 lg:grid-cols-5`)
-* 이미지: `object-contain`, `overflow-hidden` 등으로 크기 조정
-
----
-
 ## 💡 TODO / 앞으로 확장할 기능 (예시)
 
-* 🎤 음성으로 오브젝트 속성 등록 (STT 연동)
-* 🧠 GPT API로 생성 이미지 만들기
 * 📷 Tangram 블록 카메라 인식 (YOLO 연동)
-* 💾 오브젝트 로컬/서버 저장
+* 🧠 GPT API로 오브젝트 생성 이미지 만들기
+* 🎤 음성으로 오브젝트 속성 등록 (STT 연동)
+* 💾 오브젝트 정보 로컬/서버 저장
