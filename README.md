@@ -81,7 +81,7 @@ export interface TangramObject {
 
 ---
 
-## 💡 TODO / 앞으로 확장할 기능 (예시)
+## 💡 TODO
 
 * 📷 Tangram 블록 카메라 인식 (YOLO 연동)
 * 🧠 GPT API로 오브젝트 생성 이미지 만들기
